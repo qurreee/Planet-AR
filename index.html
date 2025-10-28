@@ -14,7 +14,7 @@
       arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
       <!-- BUMI -->
-      <a-marker type="pattern" url="pattern-earth.patt">
+      <a-marker type="pattern" url="bumi.patt">
         <a-gltf-model
           src="3dmodel/earth.glb"
           scale="2 2 2"
@@ -22,21 +22,22 @@
         ></a-gltf-model>
       </a-marker>
       <!-- saturn -->
-      <a-marker type="pattern" url="pattern-saturn.patt">
+      <a-marker type="pattern" url="saturn.patt">
         <a-gltf-model
-          src="3dmodel/saturn.glb"
-          scale="0.1 0.1 0.1"
+          src="3dmodel/saturn_planet.glb"
+          scale="1 1 1"
           rotation="90 0 180"
         ></a-gltf-model>
       </a-marker>
       <!-- mars -->
-      <a-marker type="pattern" url="pattern-mars.patt">
+      <a-marker type="pattern" url="kanji.patt">
         <a-gltf-model
           src="3dmodel/mars.glb"
-          scale="0.1 0.1 0.1"
+          scale="1 1 1"
           rotation="90 0 180"
         ></a-gltf-model>
       </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
