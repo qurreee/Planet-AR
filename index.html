@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
+    <title>Planet AR</title>
+  </head>
+  <body>
+    <a-scene
+      embedded
+      vr-mode-ui="enabled: false;"
+      arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+    >
+      <!-- BUMI -->
+      <a-marker type="pattern" url="pattern-earth.patt">
+        <a-gltf-model
+          src="3dmodel/earth.glb"
+          scale="2 2 2"
+          rotation="90 0 180"
+        ></a-gltf-model>
+      </a-marker>
+      <!-- saturn -->
+      <a-marker type="pattern" url="pattern-saturn.patt">
+        <a-gltf-model
+          src="3dmodel/saturn.glb"
+          scale="0.1 0.1 0.1"
+          rotation="90 0 180"
+        ></a-gltf-model>
+      </a-marker>
+      <!-- mars -->
+      <a-marker type="pattern" url="pattern-mars.patt">
+        <a-gltf-model
+          src="3dmodel/mars.glb"
+          scale="0.1 0.1 0.1"
+          rotation="90 0 180"
+        ></a-gltf-model>
+      </a-marker>
+    </a-scene>
+  </body>
+</html>
